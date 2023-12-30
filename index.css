@@ -76,3 +76,11 @@ body{
   width: 740px;
   margin-left: 250px;
 }
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 50%;
+}
