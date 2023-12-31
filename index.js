@@ -1,19 +1,24 @@
 const arrow = document.querySelector(".arrow");
 
 
+
+
+function scroolToTop () {
+  window.scrollTo({
+    top: 0,
+    
+    
+  });
+}
+
 arrow.addEventListener('click', function() {
   // Scroll to the top of the page
-  window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // Optional: Adds smooth scrolling animation
-      
-  });
-
-  arrow.animate({ 
-    transform: scrollTo
+  
+  arrow.animate({
+    transform: scroolToTop()
   }, {
     duration: 4000,
-    easing:"ease"
+    easing: "ease"
   })
-
+  
 });
