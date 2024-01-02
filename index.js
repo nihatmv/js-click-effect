@@ -6,19 +6,21 @@ const arrow = document.querySelector(".arrow");
 function scroolToTop () {
   window.scrollTo({
     top: 0,
-    
-    
   });
 }
 
 arrow.addEventListener('click', function() {
-  // Scroll to the top of the page
+  const newspaperSpinning = [
+    { transform: "rotate(0) scale(1)" },
+    { transform: "rotate(360deg) scale(0)" },
+  ];
   
-  arrow.animate({
-    transform: scroolToTop()
-  }, {
-    duration: 4000,
-    easing: "ease"
-  })
+  const newspaperTiming = {
+    duration: 2000,
+    
+  };
+  
+
+  scroolToTop().animate(arrow, arrowTiming);
   
 });
