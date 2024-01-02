@@ -1,5 +1,5 @@
 body{
-  margin-bottom:1800px;
+  margin-bottom:500px;
   background-color: black;
 }
 
@@ -75,6 +75,12 @@ body{
   flex-direction: column;
   width: 740px;
   margin-left: 250px;
+  opacity: 0;
+  animation: text;
+  animation-timeline: view();
+}
+@keyframes text {
+  to {opacity: 1;}
 }
 .arrow {
   position: fixed;
